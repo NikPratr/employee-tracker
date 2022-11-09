@@ -36,7 +36,11 @@ function startMyApp() {
     ).then((choice) => {
         if(choice.question === 'View All Employees') {
             viewEmp();
-        } else if(choice.question == "Add Department") {
+        } else if(choice.question == "Add Employee") {
+            addEmployee();
+        }  else if(choice.question == "Update Employee Role") {
+            updateEmployee();
+        }  else if(choice.question == "Add Department") {
             addDept();
         } else if(choice.question == "View All Roles") {
             viewRoles();
